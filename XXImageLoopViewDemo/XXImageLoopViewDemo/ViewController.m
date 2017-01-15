@@ -23,7 +23,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     NSMutableArray *images = [NSMutableArray arrayWithCapacity:4];
-    for (NSInteger i = 0; i < 6; i++) {
+    for (NSInteger i = 0; i < 4; i++) {
         UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld.jpg", i+1]];
         [images addObject:image];
     }
@@ -50,7 +50,7 @@
     imageLoopView.pageControl.hidden = NO;
     imageLoopView.interval = 3.0;
     imageLoopView.actionBlock = block;
-    imageLoopView.alignment = XXPageControlAlignmentBottomRight;
+    imageLoopView.alignment = XXPageControlAlignmentBottomCenter;
     imageLoopView.leftOrRightMargin = 60;
     imageLoopView.bottomMargin = 15;
         [self.view addSubview:imageLoopView];
