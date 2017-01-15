@@ -2,9 +2,8 @@
 
 ![示例效果图](http://img.blog.csdn.net/20170115161307910?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdmJpcmRiZXN0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-###XXImageLoopView
 
-一个快速集成图片轮播功能的自定义控件
+### 一个快速集成图片轮播功能的自定义控件
 
 
 ---
