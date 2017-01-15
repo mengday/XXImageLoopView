@@ -64,10 +64,10 @@ _imageLoopView.actionBlock = block;
 ```
 
 ---
-
 ### Detailed Introduction【详细介绍】
 [自定义轮播视图的实现思路的详细介绍](http://blog.csdn.net/vbirdbest/article/details/54562286)
 
+---
 ### Expect【期待】
 
 - 如果在使用过程中遇到BUG，希望你能Issues我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）
