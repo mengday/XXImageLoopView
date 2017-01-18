@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.author             = { "menday" => "mengd6@126.com" }
   s.social_media_url   = "http://weibo.com/exceptions"
   s.source       = { :git => "https://github.com/mengday/XXImageLoopView.git", :tag => s.version }
-  s.source_files  = "XXImageLoopView"
+  s.source_files  = "XXImageLoopView/*.{h,m}"
   s.requires_arc = true
 end
