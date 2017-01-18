@@ -16,6 +16,8 @@
 		65D464351E2B3024005A8C0F /* XXImageLoopViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D464341E2B3024005A8C0F /* XXImageLoopViewDemoTests.m */; };
 		65D464401E2B3024005A8C0F /* XXImageLoopViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4643F1E2B3024005A8C0F /* XXImageLoopViewDemoUITests.m */; };
 		65D464501E2B3061005A8C0F /* XXImageLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4644F1E2B3061005A8C0F /* XXImageLoopView.m */; };
+		9A3A2DEB1E2E14BE007B4BC6 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A2DEA1E2E14BE007B4BC6 /* TestViewController.m */; };
+		9A3A2DEE1E2E14DB007B4BC6 /* XXCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A2DED1E2E14DB007B4BC6 /* XXCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		65D464411E2B3024005A8C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65D4644E1E2B3061005A8C0F /* XXImageLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXImageLoopView.h; sourceTree = "<group>"; };
 		65D4644F1E2B3061005A8C0F /* XXImageLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXImageLoopView.m; sourceTree = "<group>"; };
+		9A3A2DE91E2E14BE007B4BC6 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		9A3A2DEA1E2E14BE007B4BC6 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		9A3A2DEC1E2E14DB007B4BC6 /* XXCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXCollectionViewCell.h; sourceTree = "<group>"; };
+		9A3A2DED1E2E14DB007B4BC6 /* XXCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				65D4644D1E2B304C005A8C0F /* XXImageLoopView */,
+				9A3A2DE81E2E14BE007B4BC6 /* XXImageLoopView2 */,
 				65D4641D1E2B3024005A8C0F /* AppDelegate.h */,
 				65D4641E1E2B3024005A8C0F /* AppDelegate.m */,
 				65D464201E2B3024005A8C0F /* ViewController.h */,
@@ -151,6 +158,17 @@
 				65D4644F1E2B3061005A8C0F /* XXImageLoopView.m */,
 			);
 			path = XXImageLoopView;
+			sourceTree = "<group>";
+		};
+		9A3A2DE81E2E14BE007B4BC6 /* XXImageLoopView2 */ = {
+			isa = PBXGroup;
+			children = (
+				9A3A2DE91E2E14BE007B4BC6 /* TestViewController.h */,
+				9A3A2DEA1E2E14BE007B4BC6 /* TestViewController.m */,
+				9A3A2DEC1E2E14DB007B4BC6 /* XXCollectionViewCell.h */,
+				9A3A2DED1E2E14DB007B4BC6 /* XXCollectionViewCell.m */,
+			);
+			path = XXImageLoopView2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,8 +302,10 @@
 			files = (
 				65D464501E2B3061005A8C0F /* XXImageLoopView.m in Sources */,
 				65D464221E2B3024005A8C0F /* ViewController.m in Sources */,
+				9A3A2DEE1E2E14DB007B4BC6 /* XXCollectionViewCell.m in Sources */,
 				65D4641F1E2B3024005A8C0F /* AppDelegate.m in Sources */,
 				65D4641C1E2B3024005A8C0F /* main.m in Sources */,
+				9A3A2DEB1E2E14BE007B4BC6 /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +529,7 @@
 				65D464461E2B3024005A8C0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65D464471E2B3024005A8C0F /* Build configuration list for PBXNativeTarget "XXImageLoopViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +538,7 @@
 				65D464491E2B3024005A8C0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65D4644A1E2B3024005A8C0F /* Build configuration list for PBXNativeTarget "XXImageLoopViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +547,7 @@
 				65D4644C1E2B3024005A8C0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
