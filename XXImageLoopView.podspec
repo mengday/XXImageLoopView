@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "XXImageLoopView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A fast integration images loop function of custom control"
   s.description  = "A fast integration images loop function of custom control addtion with cocoapod support."
   s.homepage     = "https://github.com/mengday/XXImageLoopView"

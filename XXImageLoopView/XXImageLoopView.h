@@ -29,13 +29,13 @@ typedef NS_ENUM(NSInteger, XXPageControlAlignment) {
 /** UIPageControl的显示位置, 默认值是XXPageControlAlignmentBottomCenter */
 @property (nonatomic, assign) XXPageControlAlignment alignment;
 
-/** 当alignment=Left|Right时UIPageControl距离父视图的外间距，默认为20*/
+/** 当alignment=Left|Right时UIPageControl距离父视图的外间距，默认为20, leftOrRightMargin不要和alignment同时使用*/
 @property (nonatomic, assign) CGFloat leftOrRightMargin;
 
-/** UIPageControl距离父视图的底部间距, 默认是10 */
+/** UIPageControl距离父视图的底部间距, 默认是0 */
 @property (nonatomic, assign) CGFloat bottomMargin;
 
-/** 定时器间隔时间, 默认为1秒 */
+/** 定时器间隔时间, 默认为3秒 */
 @property (nonatomic, assign) NSTimeInterval interval;
 
 /** 动画周期：图片向左滑动的时间，默认1.5秒 */
@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger, XXPageControlAlignment) {
 - (instancetype)initWithFrame:(CGRect)frame images:(NSArray *)images interval:(NSTimeInterval)interval;
 - (instancetype)initWithFrame:(CGRect)frame images:(NSArray *)images;
 - (instancetype)initWithImages:(NSArray *)images;
-- (instancetype)imageLoopView;
++ (instancetype)imageLoopView;
 
 
 @end
