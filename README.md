@@ -42,7 +42,7 @@ imageLoopView.frame = CGRectMake(0, 0, self.view.frame.size.width, 150);
 [self.view addSubview:imageLoopView];
     
 // 方式三(初始化时不提供参数)
-XXImageLoopView *imageLoopView = [[XXImageLoopView alloc] init];
+XXImageLoopView *imageLoopView = [XXImageLoopView imageLoopView];
 imageLoopView.frame = CGRectMake(0, 0, self.view.frame.size.width, 150);
 imageLoopView.images = images;
 imageLoopView.pageControl.pageIndicatorTintColor = [UIColor greenColor];
@@ -50,7 +50,7 @@ imageLoopView.pageControl.hidden = NO;
 imageLoopView.interval = 3.0;
 imageLoopView.actionBlock = block;
 imageLoopView.alignment = XXPageControlAlignmentBottomRight;
-imageLoopView.leftOrRightMargin = 60;
+// imageLoopView.leftOrRightMargin = 60;
 imageLoopView.bottomMargin = 15;
 [self.view addSubview:imageLoopView];
 ```

@@ -10,9 +10,9 @@
 
 
 #define kCycleCount 3
-#define kTimeInterval 5.0
+#define kTimeInterval 3.0
 #define kAnimateDuration 1.5
-#define kBottomMargin 10
+#define kBottomMargin 0
 
 
 @interface XXImageLoopView () <UIScrollViewDelegate>
@@ -44,8 +44,8 @@
     [self setupPropertyDefaultValue];
 }
 
-- (instancetype)imageLoopView {
-    return [self initWithFrame:CGRectZero images:nil interval:kTimeInterval actionBlock:nil];
++ (instancetype)imageLoopView {
+    return [[XXImageLoopView alloc] init];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -71,7 +71,7 @@
         
         [self setupPropertyDefaultValue];  // 初始化属性的默认值
         
-        _images = images;
+        self.images = images;
         
         self.interval = interval;
         
@@ -152,7 +152,7 @@
     CGFloat x = 0;
     switch (self.alignment) {
         case XXPageControlAlignmentBottomCenter:
-            x = (width - pageConntrolWidth) * 0.5 + pageConntrolWidth * 0.5;
+            x = (width - pageConntrolWidth) * 0.5;
             break;
         case XXPageControlAlignmentBottomLeft:
             x = self.leftOrRightMargin;
@@ -164,16 +164,18 @@
             break;
     }
     
-    _pageControl.frame = CGRectMake(x, height - self.bottomMargin, pageConntrolWidth, 0);
+    CGFloat pageControlHeight = 20;
+    _pageControl.frame = CGRectMake(x, height - pageControlHeight - self.bottomMargin , pageConntrolWidth, pageControlHeight);
 }
 
 
 - (void)setImages:(NSArray *)images {
     _images = images;
     if (images == nil || images.count == 0) {
-        NSException *exception = [NSException exceptionWithName:@"NSNullException"
-                                                         reason:@"images Value is not allowed to be empty and count must > 0 " userInfo:nil];
-        @throw exception;
+//        NSException *exception = [NSException exceptionWithName:@"NSNullException"
+//                                                         reason:@"images Value is not allowed to be empty and count must > 0 " userInfo:nil];
+//        @throw exception;
+        return;
     }
     
     _middleImageView.image = images[0];
